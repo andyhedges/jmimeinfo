@@ -4,7 +4,7 @@ jimimeinfo is a library for detecting the mime type from both the file name and 
 
 ##History
 
-This library was first released under the GPL about 8 years ago on Sun Microsystems java.net code sharing portal. Sadly this seems to be no longer and so due to popular demand I'm re-releasing it here on github. I've also changed the license to the more permisive MIT license so that it can be used more widely.
+This library was first released under the GPL about 8 years ago on Sun Microsystems java.net code sharing portal. Sadly this seems to be no longer and so due to popular demand I'm re-releasing it here on github. I've also changed the license to the more permissive MIT license so that it can be used more widely.
 
 ##Plans
 
@@ -14,7 +14,7 @@ TBD
 
 Other than a JRE and the freedesktop database which you'll need to source yourself there are no dependencies.
 
-Earlier versions were dependent on Apache Jakarata ORO, this is no longer true.
+Earlier versions were dependent on Apache Jakarta ORO, this is no longer true.
 
 ##Usage
 
@@ -47,6 +47,6 @@ String mime = mimeInfo.getMimeType(IoUtil.getClasspathFile("test.tar.gz"));
 System.out.println("This file is of " + mime + "mime-type");
 ```
 
-So far I haven't tested this against a modern version of the mime database from freedesktop please treat it as alpha code (even though it's 8+ years old).
+So far I haven't tested this against a modern version of the mime database from freedesktop. Please treat it as alpha code (even though it's 8+ years old).
 
 [shared-mime-info]: http://freedesktop.org/wiki/Software/shared-mime-info/
