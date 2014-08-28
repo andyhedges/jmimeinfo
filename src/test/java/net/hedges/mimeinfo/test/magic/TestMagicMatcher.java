@@ -37,87 +37,87 @@ public class TestMagicMatcher extends TestCase {
     }
 
     public void testMagicMatcherFlv() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.flv"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.flv"));
         assertEquals("application/x-flash-video", mime);
     }
 
     public void testMagicMatcherMov() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.mov"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.mov"));
         assertEquals("video/quicktime", mime);
     }
 
     public void testMagicMatcherWmv() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.wmv"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.wmv"));
         assertEquals("video/x-ms-asf", mime);
     }
 
     public void testMagicMatcherMpg() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.mpg"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.mpg"));
         assertEquals("video/mpeg", mime);
     }
 
     public void testMagicMatcherAvi() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.avi"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.avi"));
         assertEquals("video/x-msvideo", mime);
     }
 
     public void testMagicMatcherSh() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.sh"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.sh"));
         assertEquals("application/x-shellscript", mime);
     }
 
     public void testMagicMatcherJpg() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.jpg"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.jpg"));
         assertEquals("image/jpeg", mime);
     }
 
     public void testMagicMatcherAu() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.au"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.au"));
         assertEquals("audio/basic", mime);
     }
 
     public void testMagicMatcherBin() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.bin"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.bin"));
         assertNull(mime);
     }
 
     public void testMagicMatcherBmp() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.bmp"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.bmp"));
         assertEquals("image/bmp", mime);
     }
 
     public void testMagicMatcherEps() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.eps"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.eps"));
         assertEquals("application/postscript", mime);
     }
 
     public void testMagicMatcherGif() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.gif"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.gif"));
         assertEquals("image/gif", mime);
     }
 
     public void testMagicMatcherPng() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.png"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.png"));
         assertEquals("image/png", mime);
     }
 
     public void testMagicMatcherWav() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.wav"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.wav"));
         assertEquals("audio/x-wav", mime);
     }
 
     public void testMagicMatcherXls() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.xls"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.xls"));
         assertEquals("application/x-ole-storage", mime);
     }
 
     public void testMagicMatcherSo() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.so"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.so"));
         assertEquals("application/x-sharedlib", mime);
     }
 
     public void testMagicMatcherDll() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.dll"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.dll"));
         assertEquals("application/x-ms-dos-executable", mime);
     }
 
@@ -125,87 +125,87 @@ public class TestMagicMatcher extends TestCase {
     // a valid
     // one that would trigger the second rule.
     public void testMagicMatcherExecutable() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test"));
         assertEquals("application/x-executable", mime);
     }
 
     public void testMagicMatcherTar() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.tar"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.tar"));
         assertEquals("application/x-tar", mime);
     }
 
     public void testMagicMatcherTarGz() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.tar.gz"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.tar.gz"));
         assertEquals("application/x-gzip", mime);
     }
 
     public void testMagicMatcherExe() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.exe"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.exe"));
         assertEquals("application/x-ms-dos-executable", mime);
     }
 
     public void testMagicMatcherPsd() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.psd"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.psd"));
         assertEquals("image/x-psd", mime);
     }
 
     public void testMagicMatcherTiff() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.tiff"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.tiff"));
         assertEquals("image/tiff", mime);
     }
 
     public void testMagicMatcherBZip2() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.tar.bz2"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.tar.bz2"));
         assertEquals("application/x-bzip", mime);
     }
 
     public void testMagicMatcherZip() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.zip"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.zip"));
         assertEquals("application/zip", mime);
     }
 
     public void testMagicMatcherWordDoc() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.doc"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.doc"));
         assertEquals("application/x-ole-storage", mime);
     }
 
     public void testMagicMatcherExcelXls() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.xls"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.xls"));
         assertEquals("application/x-ole-storage", mime);
     }
 
     public void testMagicMatcherPowerPointPpt() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.ppt"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.ppt"));
         assertEquals("application/x-ole-storage", mime);
     }
 
     public void testMagicMatcherODFOdt() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.odt"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.odt"));
         assertEquals("application/zip", mime);
     }
 
     public void testMagicMatcherRtf() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.rtf"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.rtf"));
         assertEquals("application/rtf", mime);
     }
 
     public void testMagicMatcherOpenOfficeSwx() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.sxw"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.sxw"));
         assertEquals("application/zip", mime);
     }
 
     public void testMagicMatcherStarWriterSdw() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.sdw"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.sdw"));
         assertEquals("application/x-ole-storage", mime);
     }
 
     public void testMagicMatcherODFOds() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.ods"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.ods"));
         assertEquals("application/zip", mime);
     }
 
     public void testMagicMatcherLotus123Wk1() throws IOException, MimeInfoException {
-        String mime = magic.match(IoUtil.getClasspathFile("test.wk1"));
+        String mime = magic.match(IoUtil.getClasspathFile("data/test.wk1"));
         assertEquals("application/vnd.lotus-1-2-3", mime);
     }
 
