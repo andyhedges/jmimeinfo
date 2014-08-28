@@ -43,7 +43,7 @@ public class MimeInfoTest extends TestCase {
     }
 
     public void testMagicMatcherTarGz() throws IOException, MimeInfoException {
-        String mime = mimeInfo.getMimeType(IoUtil.getClasspathFile("test.tar.gz"));
+        String mime = mimeInfo.getMimeType(IoUtil.getClasspathFile("data/test.tar.gz"));
         assertEquals("application/x-compressed-tar", mime);
     }
 }
