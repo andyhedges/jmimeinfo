@@ -26,7 +26,7 @@ The following will look at the contents of the file to determine it's type
 MagicFile magic = MagicFileFactory
 					.create(IoUtil.getClasspathUrl("share/mime/magic"));
 
-String mime = magic.match(IoUtil.getClasspathFile("data/test.flv"));
+String mime = magic.match(new File("test.flv"));
 System.out.println("This file is of " + mime + "mime-type");
 ```
 
@@ -35,7 +35,8 @@ The following will look at the file name
 ```java
 GlobsFile globs = GlobsFileFactory
 					.create(IoUtil.getClasspathUrl("share/mime/globs"));
-String mime = globs.match(IoUtil.getClasspathFile("data/test.flv"));
+					
+String mime = globs.match(new File("test.flv"));
 System.out.println("This file is of " + mime + "mime-type");
 ```
 
@@ -43,7 +44,7 @@ The following takes a hybrid approach
 
 ```java
 MimeInfo mimeInfo = MimeInfoFactory.create();
-String mime = mimeInfo.getMimeType(IoUtil.getClasspathFile("test.tar.gz"));
+String mime = mimeInfo.getMimeType(new File("test.flv"));
 System.out.println("This file is of " + mime + "mime-type");
 ```
 
