@@ -1,22 +1,22 @@
-#jmimeinfo
+# jmimeinfo
 
 jimimeinfo is a library for detecting the mime type from both the file name and the content of the file. It supports the database format of the [shared-mime-info] project.
 
-##History
+## History
 
 This library was first released under the GPL about 8 years ago on Sun Microsystems java.net code sharing portal. Sadly this seems to be no longer and so due to popular demand I'm re-releasing it here on github. I've also changed the license to the more permissive MIT license so that it can be used more widely.
 
-##Plans
+## Plans
 
 TBD
 
-##Dependencies
+## Dependencies
 
 Other than a JRE and the freedesktop database which you'll need to source yourself there are no dependencies.
 
 Earlier versions were dependent on Apache Jakarta ORO, this is no longer true.
 
-##Usage
+## Usage
 
 You'll need a copy of the database on your class path as well as the jmimeinfo jar file.
 
